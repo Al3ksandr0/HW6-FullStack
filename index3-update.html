@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    table {
+        width: 600px;
+        height: 600px;
+        border-collapse: collapse;
+        border: 8px solid black;
+    }
+
+    td {
+        border: 8px solid black;
+        text-align: center;
+    }
+
+    .red {
+        background-color: #e43f21;
+    }
+
+    .yellow {
+        background-color: #f9da41;
+    }
+
+    .blue {
+        background-color: #0b11b1;
+    }
+
+    .black {
+        background-color: #020202;
+    }
+</style>
+
+<body>
+    <table>
+        <tr>
+            <td colspan="2" style="height: 50px;"></td>
+            <td colspan="2"></td>
+            <td colspan="2" class="yellow"></td>
+            <td rowspan="4" style="width: 25px;"></td>
+        </tr>
+        <tr>
+            <td style="width: 50px;"></td>
+            <td colspan="3" rowspan="2" class="red" style="height: 120px;"></td>
+            <td colspan="2" class="yellow" style="height: 100px;"></td>
+        </tr>
+        <tr>
+            <td rowspan="2"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2" class="black"></td>
+            <td></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td rowspan="3" class="yellow"></td>
+            <td></td>
+            <td colspan="2" rowspan="2" class="blue"></td>
+            <td rowspan="3" class="red"></td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2"></td>
+            <td class="black"></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="height: 20px;"></td>
+        </tr>
+    </table>
+</body>
+
+</html>

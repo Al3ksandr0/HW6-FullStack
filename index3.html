@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table {
+        width: 500px;
+        height: 500px;
+        border-collapse: collapse;
+        border: 8px solid black;
+    }
+
+    td {
+        border: 8px solid black;
+        text-align: center;
+    }
+
+    .red {
+        background-color: #e43f21;
+    }
+
+    .yellow {
+        background-color: #f9da41;
+    }
+
+    .blue {
+        background-color: #0b11b1;
+    }
+
+    .black {
+        background-color: #020202;
+    }
+
+    .width-45 {
+        width: 45px;
+    }
+
+    .width-20 {
+        width: 20px;
+    }
+
+    .height-20 {
+        height: 20px;
+    }
+
+    .width-3 {
+        width: 3px;
+    }
+</style>
+
+<body>
+    <table>
+        <tr>
+            <td colspan="2"></td>
+            <td colspan="3" class="width"></td>
+            <td colspan="2" class="yellow"></td>
+            <td rowspan="6" class="width-20"></td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="width-45"></td>
+            <td rowspan="4" colspan="4" class="red"></td>
+            <td rowspan="2" colspan="2" class="yellow"></td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td rowspan="3"></td>
+            <td rowspan="2"></td>
+            <td rowspan="2"></td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td rowspan="2" colspan="2" class="black width-3"></td>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td rowspan="3" class="yellow"></td>
+            <td colspan="2"></td>
+            <td rowspan="2" colspan="2" class="blue"></td>
+            <td rowspan="3" class="red"></td>
+        </tr>
+        <tr>
+            <td rowspan="2" colspan="2"></td>
+            <td colspan="2" class="black height-20"></td>
+        </tr>
+        <tr>
+            <td colspan="4"></td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+
+        td {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .inside-table {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .height-200 {
+            height: 200px;
+        }
+
+        .width-33 {
+            width: 33%;
+        }
+
+        .width-60 {
+            width: 33%;
+        }
+
+        .width-28 {
+            width: 33%;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td colspan="2">1-2</td>
+            <td class="width-60">3 ширина 60%</td>
+        </tr>
+        <tr>
+            <td class="width-28">4 ширина 28%</td>
+            <td colspan="2" rowspan="2" style="width: 80%;">
+                <h2>вложенная таблица</h2>
+                <table class="inside-table">
+                    <tr>
+                        <td>1</td>
+                        <td rowspan="3">2-5-8 ширина 33%</td>
+                        <td rowspan="2" class="height-200">3-6 высота 200px</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="height-200">4-7 высота 200px</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                    </tr>
+                </table>
+                <p>ширина влженной таблцы 80%</p>
+            </td>
+        </tr>
+        <tr>
+            <td>7</td>
+        </tr>
+    </table>
+</body>
+
+</html>

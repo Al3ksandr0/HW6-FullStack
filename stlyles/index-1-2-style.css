@@ -1,0 +1,31 @@
+table {
+    width: 75%;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.width-33 {
+    width: 33.33%;
+}
+
+.height-200 {
+    height: 200px;
+}
+
+.inside-table {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.width-60 {
+    width: 33.33%;
+}
+
+.width-28 {
+    width: 28%;
+}
